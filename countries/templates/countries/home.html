@@ -1,0 +1,10 @@
+{% extends "countries/base.html" %}
+{% block title%}Home{% endblock %}
+{% block content %}
+
+  {% for country in countries %}
+    {% include "countries/country.html"%}
+  {% endfor %}
+<p><a href="{% url "tags" %}">Ir a Tags</a></p>
+<p><a href="{% url "continents:home" %}">Ir a Continents</a></p>
+{% endblock %}

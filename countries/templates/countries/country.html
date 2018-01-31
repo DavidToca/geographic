@@ -1,0 +1,7 @@
+<h1>name: {{country.name|title}}</h1>
+<p>code: {{country.code}}</p>
+{% if country.name == 'colombia'  %}
+<p>yeah: {{country.code}}</p>
+{% endif %}
+<p>detail_url <a href="{{country.detail_url}}">Ir a detalle</a></p>
+<br>
